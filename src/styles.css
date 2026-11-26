@@ -1,1 +1,96 @@
-/* Write your own responsive styles and focus treatment here. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f3ff;
+    color: #302344;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 24px;
+}
+
+header {
+    background: #570eea;
+    color: white;
+    padding: 24px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+form,
+.book-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px #00000015;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ca9696;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    background: #a58eca;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    margin: 4px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #f7f69d;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 3px solid #1769aa;
+    outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 12px;
+    }
+
+    header {
+        padding: 16px;
+    }
+
+    button {
+        width: 100%;
+        margin: 4px 0;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}
+
+button:focus-visible {
+    outline: 4px solid #005fcc;
+    outline-offset: 4px;
+    background-color: #6338a8;
+    color: white;
+}
